@@ -47,7 +47,7 @@ def main():
         with open('log.csv', 'w') as log:
             #log.truncate()
             log.write(',ISMI号码:' + IMSI + ',APN:' + APN + '\n')
-            log.write('序号,本地IP,目的地址,测试结果\n')
+            log.write('序号,本地IP,目的地址,测试结果\n')  #根据不同模块输出不同标题
 
         pdpAttachTimes = input('输入重新建立承载次数:')
         targetIP = input('输入ping测的目的地址(多个地址以\';\'分割)：')
